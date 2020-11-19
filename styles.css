@@ -199,7 +199,10 @@ div#container div#body div#body__row2 .cert__item {
 }
 
 @media only screen and (max-width: 763px) {
-  div#container div#name {
+  body {
+    padding: 15px 10px;
+  }
+  div#name {
     font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,19 +218,19 @@ div#container div#body div#body__row2 .cert__item {
     -webkit-transition: ease all 1s;
     transition: ease all 1s;
   }
-  div#container div#contact {
+  div#contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     grid-column-gap: 0px;
   }
-  div#container div#contact div#contact__label {
+  div#contact div#contact__label {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility 0s 1s, opacity 1s linear;
     transition: visibility 0s 1s, opacity 1s linear;
   }
-  div#container div.work__item {
+  div#body {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -236,7 +239,19 @@ div#container div#body div#body__row2 .cert__item {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  div#container div.work__item .item__left {
+  div#body div#body__row2 {
+    padding-left: 0px !important;
+  }
+  div.work__item {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.work__item .item__left {
     margin-bottom: 10px;
   }
 }
