@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>javascript</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="lab1">
+			<form>
+				<input type="text" id="value" placeholder="Enter value" />
+				<select name="draw" id="selection" list="draw" onchange="excute(this)">
+					<option value="draw1">Draw 1</option>
+					<option value="draw2">Draw 2</option>
+					<option value="draw3">Draw 3</option>
+					<option value="draw4">Draw 4</option>
+					<option value="draw5">Draw 5</option>
+					<option value="draw6">Draw 6</option>
+					<option value="draw7">Draw 7</option>
+					<option value="draw8">Draw 8</option>
+					<option value="draw9">Draw 9</option>
+					<option value="draw10">Draw 10</option>
+					<option value="draw11">Draw 11</option>
+				</select>
+			</form>
+			<div id="result" style="margin: 20px"></div>
+		</div>
+		<hr />
+		<div id="input">
+			<input type="text" id="col1" placeholder="text color" />
+			<input type="text" id="col2" placeholder="background color" />
+			<button onclick="changeColor()">Change color</button>
+		</div>
+		<h2 style="padding: 1rem; text-align: center">noooooooooo</h2>
+		<script>
+			function excute(a) {
+				var draw = a.value || a.options[a.selectedIndex].value;
+				var n = document.getElementById('value').value;
+				var result = document.getElementById('result');
+
+				switch (draw) {
+					case 'draw1':
+						let msg = '';
+						result.innerHTML = '';
+						for (let i = 0; i < n; i++) {
+							msg += '*';
+						}
+						result.innerHTML = msg;
+						break;
+					case 'draw2':
+						for (var i = 0; i < n; i++) {
+							let star = '';
+							for (var j = 0; j < n; j++) {
+								star += '*';
+							}
+							console.log(star);
+						}
+						break;
+					case 'draw3':
+						for (var i = 0; i < n; i++) {
+							let out = '';
+							for (var j = 0; j < n; j++) {
+								out += j + 1;
+							}
+							console.log(out);
+						}
+						break;
+					case 'draw4':
+						break;
+					case 'draw5':
+						break;
+					case 'draw6':
+						break;
+					case 'draw7':
+						break;
+					case 'draw8':
+						break;
+					case 'draw9':
+						break;
+					case 'draw10':
+						break;
+					case 'draw11':
+						break;
+					case 'draw12':
+						break;
+				}
+			}
+		</script>
+		<!-- <script>
+			// const e1 = '' + 1 + 0;
+			// const e2 = '' - 1 + 0;
+			// const e3 = true + false;
+			// const e4 = 6 / '3';
+			// const e5 = '2' + '3';
+			// const e6 = 4 + 5 + 'px';
+			// const e7 = '$' + 4 + 5;
+			// const e8 = '4' - 2;
+			// const e9 = '4px' - 2;
+			// const e10 = 7 / 0;
+			// const e11 = ' -9' + 5;
+			// const e12 = ' -9' - 5;
+			// const e13 = null + 1;
+			// const e14 = undefined + 1;
+			// const e15 = ' \t \n' - 2;
+
+			// let balance;
+			// const myParents = 'mom and dad';
+			// let address;
+			// let universeAge;
+
+			// let human;
+			// const name = 'somfuckinghin';
+			// human = name;
+			// console.log(human);
+
+			changeColor = () => {
+				let col1 = document.querySelector('#col1').value;
+				let col2 = document.querySelector('#col2').value;
+
+				alert('Text is changing to ' + col1 + ' with ' + col2 + ' background');
+				document.querySelector('h2').style.color = col1;
+				document.querySelector('h2').style.background = col2;
+			};
+		</script> -->
+	</body>
+</html>
