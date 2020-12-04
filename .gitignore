@@ -1,0 +1,7 @@
+sonar-scanner-debug.bat
+sonar-scanner.bat
+airBNB/.eslintrc.json
+airBNB/.gitignore
+airBNB/.prettierrc
+airBNB/package-lock.json
+conf/sonar-scanner.properties
